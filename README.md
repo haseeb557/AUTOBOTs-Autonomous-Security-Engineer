@@ -1,4 +1,4 @@
-# AUTOBOTs: Autonomous Security Engineer
+# <img width="100" height="100" alt="Image" src="https://github.com/user-attachments/assets/c89bbdfa-5b7e-412c-868a-d0456bd583e0" /> AUTOBOTs: Autonomous Security Engineer
 
 AUTOBOTs is an **AI-driven, autonomous penetration testing framework** designed to revolutionize how organizations identify, validate, and remediate security vulnerabilities. Built using a **multi-agent architecture** and **Large Language Models (LLMs)**, AUTOBOTs goes beyond traditional automation by introducing adaptive reasoning, real exploit validation, and scalable offensive security operations with minimal human supervision.
 
