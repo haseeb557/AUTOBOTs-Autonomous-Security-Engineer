@@ -2,8 +2,6 @@
 
 AUTOBOTs is an **AI-driven, autonomous penetration testing framework** designed to revolutionize how organizations identify, validate, and remediate security vulnerabilities. Built using a **multi-agent architecture** and **Large Language Models (LLMs)**, AUTOBOTs goes beyond traditional automation by introducing adaptive reasoning, real exploit validation, and scalable offensive security operations with minimal human supervision.
 
----
-
 ## 🚀 Key Features
 
 * **Multi-Agent Architecture**
@@ -27,8 +25,6 @@ AUTOBOTs is an **AI-driven, autonomous penetration testing framework** designed 
 * **Secure by Design**
   Encrypted communications, role-based access control, and compliance with industry standards.
 
----
-
 ## 🧠 Supported Security Capabilities
 
 * OSINT Gathering
@@ -41,100 +37,34 @@ AUTOBOTs is an **AI-driven, autonomous penetration testing framework** designed 
 * Bug Bounty Workflow Simulation
 * CTF Challenge Solving
 
----
+## Installation
 
-## 🏗️ Architecture Overview
+### Quick Setup to Run the AUTOBOTs MCP Server
 
-AUTOBOTs follows a **Two-Tier Client–Server Architecture** combined with a **Layered Design**, ensuring scalability, modularity, and security.
+```bash
+# 1. Clone the repository
+git clone https://github.com/haseeb557/AUTOBOTs-Autonomous-Security-Engineer.git
+cd "AUTOBOTs-Autonomous-Security-Engineer"
+cd "FYP 4 - Full Code"
 
-**Client Tier**
+# 2. Create virtual environment
+python3 -m venv autobots-env
+source autobots-env/bin/activate  # Linux/Mac
+# autobots-env\Scripts\activate   # Windows
 
-* IDE Plugins (VSCode, Cursor, Roo Code)
-* Chat-based AI Interfaces
-* Web Dashboard
+# 3. Install Python dependencies
+pip3 install -r requirements.txt
+```
+### Start the Server
 
-**Server Tier (Layered Backend)**
+```bash
+# Start the MCP server
+python3 hexstrike_server.py
 
-* User Interaction Layer
-* AI Orchestration Layer
-* Analysis & Tools Layer
-* Execution (Sandbox) Layer
-* Cache Layer
-* Reporting Layer
+# Optional: Start with debug mode
+python3 hexstrike_server.py --debug
 
-This design enables real-time interaction while securely executing sensitive security operations on the server.
+# Optional: Custom port configuration
+python3 hexstrike_server.py --port 8888
+```
 
----
-
-## 🧩 Technology Stack
-
-### **Languages & Frameworks**
-
-* Python
-* RESTful APIs
-
-### **AI & LLMs**
-
-* OpenAI GPT models
-* Hugging Face Transformers
-* Multi-agent orchestration engines
-
-### **Security Tools**
-
-* Nmap
-* Nikto
-* Metasploit
-* Gobuster
-* Burp Suite (API-based integration)
-
-### **Databases & Storage**
-
-* Centralized database for scan results, logs, and agent state
-* In-memory cache for performance optimization
-
-### **Deployment**
-
-* Linux, Windows Server, macOS
-* Cloud-ready (AWS, Azure, Google Cloud)
-
----
-
-## 👥 Target Users
-
-* **Security Analysts & Penetration Testers**
-* **Developers & DevSecOps Engineers**
-* **System Administrators & Security Managers**
-
-AUTOBOTs empowers teams to enhance security without expanding workforce size or slowing development velocity.
-
----
-
-## 🔐 Security & Compliance
-
-AUTOBOTs is designed with strong security and ethical considerations:
-
-* Encrypted data storage and communication
-* Secure authentication and access control
-* Authorized testing only
-* Supports compliance alignment with:
-
-  * PCI DSS 4.0
-  * HIPAA
-  * ISO/IEC 27001:2022
-
----
-
-## 📊 Why AUTOBOTs?
-
-Traditional tools:
-
-* Produce false positives
-* Lack exploit validation
-* Require heavy human oversight
-
-AUTOBOTs:
-
-* Thinks like a human attacker
-* Acts autonomously
-* Validates findings with real impact
-* Scales across large infrastructures
